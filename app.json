@@ -1,0 +1,30 @@
+{
+  "name": "Heroku-app",
+  "description": "将app部署在Heroku上",
+  "keywords": [
+    "v2ray VMess VLESS"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议VMess或VLESS，请填小写的vmess或vless",
+      "value": "vmess",
+      "required": true
+    },
+    "UUID": {
+      "description": "540b9bfc-98f6-426e-8931-6833e5e06d35",
+      "value": "",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray",
+      "required": true
+    }
+  },
+  "website": "https://github.com/acosta111/freeimg",
+  "repository": "github.com/acosta111/freeimg",
+  "stack": "container",
+  "features": [
+    "runtime-dyno-metadata"
+  ]
+}
